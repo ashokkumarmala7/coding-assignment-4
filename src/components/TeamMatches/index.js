@@ -23,6 +23,7 @@ class TeamMatches extends Component {
 
     const response = await fetch(`https://apis.ccbp.in/ipl/${id}`)
     const fetchedData = await response.json()
+
     const updatedData = {
       teamBannerUrl: fetchedData.team_banner_url,
       latestMatchDetails: {
